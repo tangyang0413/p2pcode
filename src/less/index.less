@@ -1,0 +1,174 @@
+//副导航fubaohang
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-inverse{
+    .navbar-header{
+        &>a{
+            color: #FFFFFF;
+            font-size: 26px;
+            &>span{
+                color: #FFFFFF;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .navbar-nav{
+        
+        &>li{
+            //ooo
+           &>a{
+               color:#FFFFFF;
+               &:hover{
+                   color: #2e8ece;
+                   text-decoration: underline;
+               }
+           }
+        } 
+    } 
+} 
+
+//主导航fubaohang
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-default{
+    .navbar-header{
+        &>a{
+            color: #FFFFFF;
+            font-size: 26px;
+            &>span{
+                color: #FFFFFF;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .navbar-nav{
+        
+        &>li{
+            //ooo
+           &>a{
+               //color:#FFFFFF;
+               line-height:40px;
+               min-width: 80px;
+               font-size: 16px;
+               text-align: center;
+               &:hover{
+                   color: #2e8ece;
+                   background-color: #f0f0f0;
+               }
+           }
+        } 
+    } 
+} 
+
+
+//轮播
+#carousel{
+    padding: 0px;
+    margin-top: 10px;
+}
+
+
+
+//三大图标
+#feature{
+    margin-top: 20px;
+    .row{
+        div{
+            background: url(../../../static/images/feature01.png) no-repeat left center;
+            min-height: 65px;
+            padding-left: 80px;
+            h4{
+               font-weight: bold; 
+            }
+            p{
+                
+            } 
+        }
+        div:nth-of-type(2){
+            background-image: url(../../../static/images/feature02.png);
+        }
+        div:nth-of-type(3){
+            background-image: url(../../../static/images/feature03.png);
+        }
+        
+    }
+}
+
+
+
+
+//进行借款列表
+#invest{
+//  margin: 0px;
+    padding: 0px;
+}
+.panel-default{
+            border: none;
+            &>.panel-heading{
+                background-color: transparent;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px;
+                margin: 0px;
+                h1{
+                    color: #2e8ece;
+                    font-size: 26px;
+                    font-weight: bold;
+                    border-bottom: 3px solid #2e8ece;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px;
+                }
+                p{
+                    margin: 0px;
+                    padding: 0px;
+                    line-height: 60px;
+                }
+            }
+            .panel-body{
+                ul{
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+                    
+                    li{
+                        line-height: 26px;
+                        border-bottom: dotted 1px #ccc;
+                        
+                        span{
+                            float: right;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+    }
+    
+
+
+
+
+//页脚
+.el-footer {
+    background-color: #f8f8f8;
+    margin: 20px 0px 50px 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .container {
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                div:nth-of-type(2){
+                    a{
+                        img{
+                            width: 160px;
+                            height: 65px;
+                        }
+                    }
+                }
+}
+}
