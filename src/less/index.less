@@ -1,74 +1,12 @@
-//副导航fubaohang
-.navbar{
-    margin-bottom: 0px;
-}
-.navbar-inverse{
-    .navbar-header{
-        &>a{
-            color: #FFFFFF;
-            font-size: 26px;
-            &>span{
-                color: #FFFFFF;
-                font-size: 16px;
-                margin-right: 10px;
-            }
-        }
-    }
-    .navbar-nav{
-        
-        &>li{
-            //ooo
-           &>a{
-               color:#FFFFFF;
-               &:hover{
-                   color: #2e8ece;
-                   text-decoration: underline;
-               }
-           }
-        } 
-    } 
-} 
-
-//主导航fubaohang
-.navbar{
-    margin-bottom: 0px;
-}
-.navbar-default{
-    .navbar-header{
-        &>a{
-            color: #FFFFFF;
-            font-size: 26px;
-            &>span{
-                color: #FFFFFF;
-                font-size: 16px;
-                margin-right: 10px;
-            }
-        }
-    }
-    .navbar-nav{
-        
-        &>li{
-            //ooo
-           &>a{
-               //color:#FFFFFF;
-               line-height:40px;
-               min-width: 80px;
-               font-size: 16px;
-               text-align: center;
-               &:hover{
-                   color: #2e8ece;
-                   background-color: #f0f0f0;
-               }
-           }
-        } 
-    } 
-} 
-
-
+//引入header
+@import url("header.less");
 //轮播
 #carousel{
     padding: 0px;
     margin-top: 10px;
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -147,28 +85,15 @@
             }
     }
     
+//列表小于620px隐藏两栏标题及内容
+ @media all and(max-width:620px){
+     .width620{
+         display: none;
+     }
+ }   
 
 
 
 
-//页脚
-.el-footer {
-    background-color: #f8f8f8;
-    margin: 20px 0px 50px 0px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    .container {
-                padding-right: 15px;
-                padding-left: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                div:nth-of-type(2){
-                    a{
-                        img{
-                            width: 160px;
-                            height: 65px;
-                        }
-                    }
-                }
-}
-}
+//引入页脚样式
+@import url("footer.less");

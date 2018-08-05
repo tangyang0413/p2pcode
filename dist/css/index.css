@@ -17,6 +17,10 @@
   color: #2e8ece;
   text-decoration: underline;
 }
+.navbar-inverse #navbox01 ul li div img {
+  width: 140px ;
+  height: 140px;
+}
 .navbar {
   margin-bottom: 0px;
 }
@@ -42,6 +46,9 @@
 #carousel {
   padding: 0px;
   margin-top: 10px;
+}
+#carousel img {
+  width: 100%;
 }
 #feature {
   margin-top: 20px;
@@ -98,6 +105,11 @@
 .panel-default .panel-body ul li span {
   float: right;
   color: #999;
+}
+@media all and (max-width: 620px) {
+  .width620 {
+    display: none;
+  }
 }
 .el-footer {
   background-color: #f8f8f8;
