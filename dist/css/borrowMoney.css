@@ -1,0 +1,61 @@
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-header > a {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.navbar-inverse .navbar-header > a > span {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #2e8ece;
+  text-decoration: underline;
+}
+.navbar-inverse #navbox01 ul li div img {
+  width: 140px ;
+  height: 140px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-default .navbar-header > a {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.navbar-default .navbar-header > a > span {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #2e8ece;
+  background-color: #f0f0f0;
+}
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 50px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.el-footer .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.el-footer .container div:nth-of-type(2) a img {
+  width: 160px;
+  height: 65px;
+}
