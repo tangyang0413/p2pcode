@@ -1,0 +1,42 @@
+//引入header
+@import url("header.less");
+
+
+//注册页面样式
+#register{
+    .panel{
+        p{
+            text-align: center;
+            color: #CCCCCC;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        form{
+            width: 30%;
+            margin: 0 auto;
+            
+             button{
+                  width: 100%;
+              }
+        }
+    }
+}
+
+//列表小于620px隐藏两栏标题及内容
+ @media all and(max-width:620px){
+     .panel{
+         form{
+             width: 100%;
+             
+             button{
+              width: 100%;
+          }
+         }
+     }
+     
+ }   
+
+
+//引入页脚样式
+@import url("footer.less");
