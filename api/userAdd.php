@@ -17,7 +17,7 @@
 	
 	//返回结果
 	if($result){
-		//成功
+		//成功唐阳
 		//如果想直接返回json到前端，必须先定义关联数组，然后再使用json_encode(关联数组)
 	   	  $jsonArray=["isSuccess"=>true,"msg"=>"用户注册成功!"];
 		  echo json_encode($jsonArray);

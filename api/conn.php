@@ -1,5 +1,5 @@
 <?php
-	//建立数据库连接
+	//建立数据库连接唐阳
 	//响应头，设置编码方式为utf-8支持中文
    header("Content-Type:text/html;charset=utf-8");
    
