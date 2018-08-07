@@ -29,60 +29,63 @@
 		<!--模板内容开始-->
 		<div class="container">
             <div id="row">
-                <!--导航菜单-->
-                <div class="left_box">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="color_t"><a href="#">投资项目</a></li>
-                    </ul>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="color_t">
-                            <a href="#">借款项目</a>
-                        </li>
-                        <li class="">
-                            <a href="#">借款项目</a>
-                        </li>
-                        <li class="">
-                            <a href="#">还款明细</a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="color_t">
-                            <a href="#">我的账户</a>
-                        </li>
-                        <li class="">
-                            <a href="#">账户信息</a>
-                        </li>
-                        <li class="active" >
-                            <a href="#">实名认证</a>
-                        </li>
-                        <li class="">
-                            <a href="#">银行卡管理</a>
-                        </li> 
-                        <li class="">
-                            <a href="#">登录记录</a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="color_t">
-                            <a href="#">资产详情</a>
-                        </li>
-                        <li class="">
-                            <a href="#">账户流水</a>
-                        </li>
-                        <li class="">
-                            <a href="#">充值明细</a>
-                        </li>
-                        <li class="">
-                            <a href="#">提现记录</a>
-                        </li> 
-                        <li class="">
-                            <a href="#">收款明细</a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="color_t"><a href="#">个人资料</a></li>
-                    </ul>
-                </div>
+				
+				<!-- //个人中心左侧 -->
+				<!--导航菜单-->
+				<div class="left_box">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="color_t"><a href="">投资项目</a></li>
+					</ul>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="color_t">
+							<a href="#">借款项目</a>
+						</li>
+						<li class="">
+							<a href="#">借款项目</a>
+						</li>
+						<li class="">
+							<a href="#">还款明细</a>
+						</li>
+					</ul>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="color_t">
+							<a href="#">我的账户</a>
+						</li>
+						<li class="">
+							<a href="">账户信息</a>
+						</li>
+						<li class="active" >
+							<a href="realAuth.php">实名认证</a>
+						</li>
+						<li class="">
+							<a href="#">银行卡管理</a>
+						</li> 
+						<li class="">
+							<a href="#">登录记录</a>
+						</li>
+					</ul>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="color_t">
+							<a href="#">资产详情</a>
+						</li>
+						<li class="">
+							<a href="#">账户流水</a>
+						</li>
+						<li class="">
+							<a href="#">充值明细</a>
+						</li>
+						<li class="">
+							<a href="#">提现记录</a>
+						</li> 
+						<li class="">
+							<a href="#">收款明细</a>
+						</li>
+					</ul>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="color_t"><a href="userInfo.php">个人资料</a></li>
+					</ul>
+				</div>
+
 				
                 
 
@@ -194,5 +197,5 @@
 	<!--引入bootstrap  js文件-->
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<!--引入提示框的js文件-->
-	<script src="src/javascript/titlebox.js"></script>
+	<script src="src/javascript/realAuth.js"></script>
 </html>
