@@ -120,6 +120,7 @@ $(document).ready(function() {
                 	$("#myModal").modal("show");
                 	//计时器
                 	var num=5;
+                	//计时器
                 	var timenum=setInterval(function(){
                 		num--;
                 		$("#time").text(num);
