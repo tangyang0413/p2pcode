@@ -1,0 +1,45 @@
+//引入header
+@import url("header.less");
+
+
+//内容样
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#row{
+    display: flex;
+    margin-top: 8px;
+
+    //个人中心左侧
+    @import url("grzx_______left.less");
+
+
+    //右侧内容
+    #realAuthForm{
+        .form-control{
+            width: 260px;
+
+        }
+        .idCardItem{
+            width: 160px;
+            height: 150px;
+            float: left;
+            margin-right: 10px;
+            border: 1px solid #e3e3e3;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #viewExample {
+            position: relative;
+            left: 50px;
+            top: 60px;
+        }
+    }
+}
+
+//引入页脚样式
+@import url("footer.less");

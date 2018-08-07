@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>登录页面</title>
+		<title>注册页面</title>
 		<!--视口: 兼容移动端-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 		<!--引入bootstarp样式-->
@@ -31,9 +31,10 @@
 			<!--框-->
 			<div class="panel panel-default">
 				<!--标题-->
-				<div class="panel-heading">登录</div>
+				<div class="panel-heading">用户注册</div>
 				
 				<div class="panel-body">
+					<p>请填写注册信息，点击“提交注册”即可完成注册！</p>
 					<form id="registerform">
 						  <div class="form-group">
 						    <label for="username">用户账号</label>
@@ -43,7 +44,33 @@
 						    <label for="password1">登录密码</label>
 						    <input type="password" class="form-control" name="password1" id="password1" placeholder="">
 						  </div>
-						  <button type="submit" class="btn btn-success">登录</button>
+						   <div class="form-group">
+						    <label for="password2">确认密码</label>
+						    <input type="password" class="form-control" name="password2" id="password2" placeholder="">
+						  </div>
+						  <div class="form-group">
+						    <label for="realname">真实姓名</label>
+						    <input type="text" class="form-control" name="realname" id="realname" placeholder="请输入姓名">
+						  </div>
+						  <div class="form-group">
+						    <label for="mobile">手机号码</label>
+						    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="请输入手机号码">
+						  </div>
+						  <div class="form-group">
+						    <label>用户性别</label>
+						    <label class="radio-inline">
+							  <input type="radio" name="sex" value="男">男
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="sex" value="女">女
+							</label>
+						  </div>
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox">同意注册协议
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-danger">立即注册</button>
 					</form>
 				</div>
 			</div>

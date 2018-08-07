@@ -1,0 +1,65 @@
+//引入header
+@import url("header.less");
+
+//投资内容
+.panel-heading{
+    background-color: rgba(255, 222, 173, 0) !important;
+    border-bottom: none;
+    padding-left: 0px ;
+}
+// Classes
+
+.clearfix() {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+}
+
+.container{
+    .panel{
+       border: none;
+       .panel-heading{
+           .btn-group{
+                width: 100%;
+                margin: 10px 0;
+                span{
+                    float: left !important;
+                    line-height: 34px;
+                }
+                button{
+                    width: 96px;
+                }
+                button:nth-last-child(3){
+                    margin-left: 30px;
+                    border-radius: 5px 0 0 5px;
+                    
+                }
+           }
+          
+        }
+        .table{
+            thead{
+                tr{
+                  font-size: 16px;
+                  color: rgb(185, 185, 185);
+                }
+            }
+            tbody{
+                tr{ 
+                    th,td{
+                        line-height: 30px;
+                    }
+                }
+            }
+       }
+    }
+}
+
+
+//引入页脚
+@import url("footer.less");
