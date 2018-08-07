@@ -25,7 +25,6 @@
 			include_once("./header.html");	
 		?>
 		
-		
 		<!--模板内容开始-->
 		<div class="container">
             <div id="row">
@@ -197,9 +196,6 @@
 						</form>
 					</div>
 				</div>
-                
-
-
 			</div>
 		</div>
 		
