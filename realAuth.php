@@ -28,8 +28,7 @@
 		
 		<!--模板内容开始-->
 		<div class="container">
-            <div id="row">
-				
+            <div id="row">	
 				<!-- //个人中心左侧 -->
 				<!--导航菜单-->
 				<div class="left_box">
@@ -41,7 +40,7 @@
 							<a href="#">借款项目</a>
 						</li>
 						<li class="">
-							<a href="#">借款项目</a>
+							<a href="request_list.php">借款项目</a>
 						</li>
 						<li class="">
 							<a href="#">还款明细</a>

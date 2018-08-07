@@ -40,7 +40,7 @@
 							<a href="#">借款项目</a>
 						</li>
 						<li class="">
-							<a href="#">借款项目</a>
+							<a href="request_list.php">借款项目</a>
 						</li>
 						<li class="">
 							<a href="#">还款明细</a>
