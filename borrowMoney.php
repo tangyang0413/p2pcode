@@ -22,13 +22,35 @@
 	<body>
 		<!--页头-->
 		<?php
-			include_once("./header.html");	
-		?>
+	include_once("./header.html");
+	?>
 		
 		
 		<!--模板内容开始-->
 		<div class="container">
-			<h1>我要借钱</h1>
+		<div class="panel panel-default">
+  <div class="panel-heading"><h2>信用贷</h2></div>
+  <div class="panel-body">
+  <p>可借金额 ¥ 2,000.00</p>
+  <p><a href="#">申请条件</a></p>
+  <p>仅限成都地区</p>
+  <p>填写基本资料</p>
+  <p>身份认证</p>
+  <p>视频认证</p>
+  <button>立刻申请</button>
+
+
+  
+
+
+
+
+
+
+
+
+  </div>
+</div>
 		</div>
 		
 		
@@ -36,8 +58,8 @@
 		
 		<!--页脚-->
 		<?php
-			include_once("./footer.html");	
-		?>
+	include_once("./footer.html");
+	?>
 	</body>
 	<!--引入jQuery-->
 	<script src="lib/jquery/jquery-1.11.0.js"></script>
