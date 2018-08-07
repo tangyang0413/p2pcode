@@ -1,2 +1,4 @@
 /node_modules
 /document
+/package-lock.json
+/package.json

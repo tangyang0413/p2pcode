@@ -1,0 +1,61 @@
+//引入header
+@import url("header.less");
+
+
+//内容样
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#row{
+    display: flex;
+    margin-top: 8px;
+    .left_box{
+        width: 260px;
+        height: 622px;
+        border: 1px solid #d3d3d3;
+        border-radius: 3px;
+        margin-right: 10px;
+        ul{
+            li{
+                height: 40px;
+                a:hover{
+                    background: #337ab7 !important;
+                }
+                &:not(.color_t){
+                    text-indent: 20px;
+                }
+            }
+            .color_t{
+                background: #F5F5F5;
+            }
+            
+        }
+    }
+    #realAuthForm{
+        .form-control{
+            width: 260px;
+
+        }
+        .idCardItem{
+            width: 160px;
+            height: 150px;
+            float: left;
+            margin-right: 10px;
+            border: 1px solid #e3e3e3;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #viewExample {
+            position: relative;
+            left: 50px;
+            top: 60px;
+        }
+    }
+}
+
+//引入页脚样式
+@import url("footer.less");
