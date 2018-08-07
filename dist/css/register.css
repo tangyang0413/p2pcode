@@ -51,19 +51,29 @@
   margin-bottom: 20px;
 }
 #register .panel form {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 #register .panel form button {
   width: 100%;
 }
 @media all and (max-width: 620px) {
-  .panel form {
+  #register .panel form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #register .panel form button {
     width: 100%;
   }
-  .panel form button {
-    width: 100%;
-  }
+}
+#myModal .modal-body .glyphicon-ok {
+  color: green;
+  font-size: 50px ;
+}
+#myModal .modal-body .glyphicon-remove,
+#myModal .modal-body #time {
+  color: red;
+  font-size: 50px;
 }
 .el-footer {
   background-color: #f8f8f8;

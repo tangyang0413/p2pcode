@@ -13,7 +13,7 @@
             margin-bottom: 20px;
         }
         form{
-            width: 30%;
+            width: 40%;
             margin: 0 auto;
             
              button{
@@ -25,18 +25,35 @@
 
 //列表小于620px隐藏两栏标题及内容
  @media all and(max-width:620px){
-     .panel{
-         form{
-             width: 100%;
-             
-             button{
-              width: 100%;
-          }
-         }
-     }
+     #register{
+        .panel{
+            form{
+                width: 100%;
+                margin: 0 auto;
+                
+                 button{
+                      width: 100%;
+                  }
+            }
+        }
+    }
      
  }   
-
+ 
+ 
+ //模态框的样式
+#myModal{
+    .modal-body{
+        .glyphicon-ok{
+            color: green;
+            font-size:50px ;
+        }
+        .glyphicon-remove,#time{
+            color: red;
+            font-size: 50px;
+        }
+    }
+}
 
 //引入页脚样式
 @import url("footer.less");

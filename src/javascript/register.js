@@ -111,7 +111,6 @@ $(document).ready(function() {
             $.post(postUrl, postData ,function(result) {
                 console.log("ajax返回的结果",result);
                 //根据ajax返回的结果处理前端的业务逻辑
-                //
                 //注册成功或者失败后弹出模态框定义
                 $("#myModal .modal-title").text("用户注册提示");
                 if(result.isSuccess){
