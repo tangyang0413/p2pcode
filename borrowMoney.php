@@ -67,11 +67,8 @@
 					<li>视频认证</li>
 				</ul>
 				<button class="but"><a href="#">立刻申请</a></button>
-
 			</div>
 		</div>
-
-
 
 		<div class="panel panel-default col-lg-4 col-md-4 col-xs-12">
 			<div class="panel-heading">
@@ -93,6 +90,10 @@
 			</div>
 		</div>
 	</div>
+
+
+
+		
 
 
 
