@@ -17,6 +17,9 @@
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
+	    <!--引入jQuery-->
+		<script src="lib/jquery/jquery-1.11.0.js"></script>
+		<script src="dist/js/min/checklogin.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -51,7 +54,7 @@
 							<a href="#">我的账户</a>
 						</li>
 						<li class="">
-							<a href="">账户信息</a>
+							<a href="#">账户信息</a>
 						</li>
 						<li class="" >
 							<a href="realAuth.php">实名认证</a>
@@ -207,8 +210,7 @@
 			include_once("./footer.html");	
 		?>
 	</body>
-	<!--引入jQuery-->
-	<script src="lib/jquery/jquery-1.11.0.js"></script>
+	
 	<!--引入bootstrap  js文件-->
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<!--引入提示框的js文件-->
