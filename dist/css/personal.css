@@ -43,34 +43,36 @@
   color: #2e8ece;
   background-color: #f0f0f0;
 }
-#row {
-  display: flex;
-  margin-top: 8px;
+.el-account .el-account-info {
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 16px;
 }
-#row .left_box {
-  width: 260px;
-  height: 622px;
-  border: 1px solid #d3d3d3;
-  border-radius: 2px;
-  margin-right: 10px;
+.el-account .el-account-info .el-head-img {
+  border: 1px solid #ddd;
+  padding: 10px;
+  float: left;
 }
-#row .left_box ul li {
-  height: 40px;
+.el-account .el-account-info .el-head-img img {
+  height: 72px;
+  width: 72px;
 }
-#row .left_box ul li a:hover {
-  background: #337ab7 !important;
+.el-account .el-account-info .el-head {
+  margin-top: 5px;
+  margin-left: 15px;
 }
-#row .left_box ul li:not(.color_t) {
-  text-indent: 20px;
+.el-account .el-accoun-auth {
+  padding: 20px 0px 0px 10px;
 }
-#row .left_box ul .color_t {
-  background: #F5F5F5;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
+.el-account .el-accoun-auth h5 {
+  font-weight: bold;
+  padding: 0px;
+  margin: 10px 0px 10px 0px;
 }
-#row .left_box ul .color_t:nth-last-child(1) {
-  border-bottom: none;
-}
+/* .el-account .el-accoun-auth h5 {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+} */
 .el-footer {
   background-color: #f8f8f8;
   margin: 20px 0px 50px 0px;
