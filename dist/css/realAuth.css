@@ -55,7 +55,7 @@
   width: 260px;
   height: 622px;
   border: 1px solid #d3d3d3;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-right: 10px;
 }
 #row .left_box ul li {
@@ -69,6 +69,11 @@
 }
 #row .left_box ul .color_t {
   background: #F5F5F5;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+#row .left_box ul .color_t:nth-last-child(1) {
+  border-bottom: none;
 }
 #row #realAuthForm .form-control {
   width: 260px;
