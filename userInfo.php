@@ -19,6 +19,7 @@
 	    <![endif]-->
 	    <!--引入jQuery-->
 		<script src="lib/jquery/jquery-1.11.0.js"></script>
+		<!--session-->
 		<script src="dist/js/min/checklogin.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
