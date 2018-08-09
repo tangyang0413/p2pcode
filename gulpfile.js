@@ -36,14 +36,14 @@ gulp.task("minCssTask",function () {
 });
 
 //配置js压缩的任务
-gulp.task("minJsTask",function () {
-	gulp.src("src/javascript/*.js") //源目录
-	.pipe(uglify()) //执行压缩
-	.pipe(rename({
-		suffix: ".min"   //执行重命名
-    })) 
-	.pipe(gulp.dest("dist/js/min")); //输出目录
-});
+//gulp.task("minJsTask",function () {
+//	gulp.src("src/javascript/*.js") //源目录
+//	.pipe(uglify()) //执行压缩
+//	.pipe(rename({
+//		suffix: ".min"   //执行重命名
+//  })) 
+//	.pipe(gulp.dest("dist/js/min")); //输出目录
+//});
 
 //开启观察者watch
 gulp.task("default",function () {

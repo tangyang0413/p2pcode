@@ -43,36 +43,58 @@
   color: #2e8ece;
   background-color: #f0f0f0;
 }
-.el-account .el-account-info {
-  border-bottom: solid 1px #ddd;
-  padding-bottom: 16px;
+#mainContent {
+  margin-top: 10px;
 }
-.el-account .el-account-info .el-head-img {
-  border: 1px solid #ddd;
-  padding: 10px;
-  float: left;
+#mainContent .panel-body ul {
+  list-style: none;
 }
-.el-account .el-account-info .el-head-img img {
-  height: 72px;
-  width: 72px;
+#mainContent .panel-body ul li {
+  line-height: 26px;
 }
-.el-account .el-account-info .el-head {
-  margin-top: 5px;
-  margin-left: 15px;
-}
-.el-account .el-accoun-auth {
-  padding: 20px 0px 0px 10px;
-}
-.el-account .el-accoun-auth h5 {
+#mainContent .panel-body ul li a:focus {
   font-weight: bold;
-  padding: 0px;
-  margin: 10px 0px 10px 0px;
+  color: orangered;
 }
-/* .el-account .el-accoun-auth h5 {
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
-} */
+#mainContent #rightCon .panel-body {
+  padding: 30px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(1) img {
+  width: 80px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(2) {
+  font-size: 16px;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  border-top: solid 1px #F0F0F0;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div {
+  margin: 10px 0px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div .authIcon {
+  background: url("../../../static/images/shiming.png") no-repeat left center;
+  padding-left: 65px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div .authIcon2 {
+  background: url("../../../static/images/shouji.jpg") no-repeat left center;
+  padding-left: 65px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div .authIcon3 {
+  background: url("../../../static/images/youxiang.jpg") no-repeat left center;
+  padding-left: 65px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div .authIcon4 {
+  background: url("../../../static/images/baozhan.jpg") no-repeat left center;
+  padding-left: 65px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div:nth-child(1),
+#mainContent #rightCon .panel-body .row:nth-child(4) div:nth-child(3) {
+  padding-left: 60px;
+}
+#mainContent #rightCon .panel-body .row:nth-child(4) div:nth-child(2),
+#mainContent #rightCon .panel-body .row:nth-child(4) div:nth-child(4) {
+  padding-left: 60px;
+}
 .el-footer {
   background-color: #f8f8f8;
   margin: 20px 0px 50px 0px;

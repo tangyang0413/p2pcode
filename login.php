@@ -91,5 +91,5 @@
 	<!--引入提示框的js文件-->
 	<script src="src/javascript/titlebox.js"></script>
 	<!--引入自定义的表单验证js-->
-	<script src="dist/js/min/register.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/javascript/register.js" type="text/javascript" charset="utf-8"></script>
 </html>

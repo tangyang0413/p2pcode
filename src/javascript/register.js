@@ -211,7 +211,8 @@ $(document).ready(function() {
                 		$("#time").text(num);
                 		if(num==0){
                 			clearInterval(timenum);
-                			location.href="userinfo.php";
+                			//登录验证成功后跳转唐阳
+                			location.href="personal.php";
                 		}
                 	},1000);
                 }
