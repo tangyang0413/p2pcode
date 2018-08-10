@@ -2,7 +2,7 @@
 @import url("header.less");
 //tangyang
 
-//定义个人中心的样式
+//定义个人中心的样式tangyang
 #mainContent{
     margin-top: 10px;
     
@@ -23,6 +23,8 @@
         }
     }
     
+        
+        
     #rightCon{
         
         .panel-body{
@@ -73,7 +75,58 @@
     }
 }
 
+//添加断点，小屏幕的个人中心内容样式
+@media all and (max-width: 768px){
+    #mainContent{
+        position: relative;
+        left: 0px;
+        min-height:1000px ;
+        //动画
+        transition: all 0.8s ease-in-out;
+        
+        
+        //左侧导航菜单
+        #leftmenu{
+            position: absolute;
+            left: 0px;
+        }
+        //右侧内容
+        #rightCon{
+              position: absolute; 
+              right: -50%;
+            }  
+        }
+    #mainContent.active{
+        left: -50%;
+//      #clickmenu{
+//          display: none;
+//      }
+    }
+    }
 
+
+
+//添加断点，手机屏幕的隐藏切换菜单按钮
+@media all and (max-width: 400px){
+    #clickmenu{
+            display: none;
+        }
+    
+    }
+    
+    
+ //添加断点，中大屏幕隐藏切换菜单按钮
+@media all and (min-width: 768px){
+    #clickmenu{
+            display: none;
+        }
+    
+    }
+
+//清除横向滚动条
+body{
+    overflow-x: hidden;
+}
 
 
 //引入footer

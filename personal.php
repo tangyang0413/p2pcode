@@ -31,7 +31,7 @@
 	<div class="container" id="mainContent">
         	<div class="row">
         		<!--左侧菜单-->
-        		<div class="col-sm-3 col-xs-6">
+        		<div class="col-sm-3 col-xs-6" id="leftmenu">
         			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
@@ -130,9 +130,20 @@
 					  </div>
 					</div>
         		</div>
+        		
+        		
+        		
+        		
+        		
+        		
+        		
+        		
         		<!--右侧内容-->
         		<div class="col-sm-9 col-xs-12" id="rightCon">
+
         			<div class="panel panel-default">
+        			  <button type="button" class="btn btn-primary btn-xs" id="clickmenu">切换菜单</button>
+        				
 					  <div class="panel-body">
 					    <div class="row">
 	        				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
@@ -140,7 +151,7 @@
 	        				</div>
 	        				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 	        				    <p>昵 称：源代码教育</p>
-	        				    <p>用户名：<span id="username"></span></p>
+	        				    <p>用户名：<span id="username"> ${result.username}</span></p>
 	        				    <p>最后登录：2016-10-25 15:30:10</p>
 	        				</div>
 	        			</div>
@@ -233,6 +244,7 @@
 <!--引入bootstrap  js文件-->
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <!--引入提示框的js文件-->
-<script src="src/javascript/realAuth.js"></script>
+<script src="src/javascript/titlebox.js"></script>
+<!---->
 
 </html>

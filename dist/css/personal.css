@@ -95,6 +95,38 @@
 #mainContent #rightCon .panel-body .row:nth-child(4) div:nth-child(4) {
   padding-left: 60px;
 }
+@media all and (max-width: 768px) {
+  #mainContent {
+    position: relative;
+    left: 0px;
+    min-height: 1000px ;
+    transition: all 0.8s ease-in-out;
+  }
+  #mainContent #leftmenu {
+    position: absolute;
+    left: 0px;
+  }
+  #mainContent #rightCon {
+    position: absolute;
+    right: -50%;
+  }
+  #mainContent.active {
+    left: -50%;
+  }
+}
+@media all and (max-width: 400px) {
+  #clickmenu {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) {
+  #clickmenu {
+    display: none;
+  }
+}
+body {
+  overflow-x: hidden;
+}
 .el-footer {
   background-color: #f8f8f8;
   margin: 20px 0px 50px 0px;
