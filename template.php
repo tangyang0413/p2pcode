@@ -45,4 +45,6 @@
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<!--引入提示框的js文件-->
 	<script src="src/javascript/titlebox.js"></script>
+	<!--session验证登录验证状态-->
+	<script src="src/javascript/checklogin.js"></script>
 </html>
