@@ -224,4 +224,155 @@ $(document).ready(function() {
                 }
             }, 'json');
         });
+        
+        
+        
+        //申请借款表单验证
+        $('#borrowForm')
+        .bootstrapValidator({
+            message: 'This value is not valid',
+//          feedbackIcons: {
+//              valid: 'glyphicon glyphicon-ok',
+//              invalid: 'glyphicon glyphicon-remove',
+//              validating: 'glyphicon glyphicon-refresh'
+//          },
+            fields: {
+            	//借款金额
+                borrowAmount: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        //数字
+                        digits: {
+                            message: '只能填写数字'
+                        }
+                    }
+                },
+                //借款利息
+                currentRate: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        regexp: {
+				          regexp: /^\d+(\.\d+)?$/i,
+				          message: '只能填写数字。'
+	                    }
+                    }
+                },
+                //最小投标
+                minAmount: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        //数字
+                        digits: {
+                            message: '只能填写数字'
+                        }
+                    }
+                },
+                //最大投标
+                maxAmount: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        //数字
+                        digits: {
+                            message: '只能填写数字'
+                        }
+                    }
+                },
+                //投标奖金
+                rewardAmount: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        regexp: {
+				          regexp: /^\d+(\.\d+)?$/i,
+				          message: '只能填写数字。'
+	                    }
+                    }
+                },
+                //借款标题
+                borrowTitle: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '借款标题必填'
+                        }
+                    }
+                },
+                //借款描述
+                description: {
+                    validators: {
+                        //非空
+                        notEmpty: {
+                            message: '必填'
+                        },
+                        stringLength: {
+				          min: 10,
+				          max: 500,
+				          message: '长度不能小于10位或超过500位'
+				        }
+                    }
+                }
+            }
+        })
+        //success验证成功后的处理函数，error验证出错的事件
+        .on('success.form.bv', function(e) {
+            // 由于使用ajax提交表单注册，所有此处阻止表单提交的默认行为
+            e.preventDefault();
+            // 获取验证的表单实例
+            var $form = $(e.target);
+            // 获取表单验证实例
+            var bv = $form.data('bootstrapValidator');
+            
+            // 使用ajax发送提交表单的数据请求lll
+            var postUrl="api/borrowAdd.php";
+            var postData=$form.serialize();// 取到表单的值并发送ajax请求到后端
+            console.log(postData);
+            
+            
+            // $.post("提交的url地址",对象形式或者字符串拼接的数据,callback回调函数, 数据返回的类型)
+            $.post(postUrl, postData ,function(result) {
+                console.log("ajax返回的结果",result);
+                //根据ajax返回的结果处理前端的业务逻辑
+                //注册成功或者失败后弹出模态框定义
+                $("#borrowModal .modal-title").text("借款申请提示");
+                if(result.isSuccess){
+                	$("#borrowModal .modal-body").html("<span class='glyphicon glyphicon-ok'></span>"+result.msg+"<span id='time'>5</span>秒后跳转");
+                	//弹出模态框
+                	$("#borrowModal").modal("show");
+                	//计时器
+                	var num=5;
+                	//计时器唐阳
+                	var timenum=setInterval(function(){
+                		num--;
+                		$("#time").text(num);
+                		if(num==0){
+                			clearInterval(timenum);
+                			location.href="invest.php";
+                		}
+                	},1000);
+                }
+                else{
+                	$("#borrowModal .modal-body").html("<span class='glyphicon glyphicon-remove'></span>");
+                	//弹出模态框
+                	$('#borrowModal').modal('show');
+                	console.log(result.msg);
+                }
+				
+
+            }, 'json');
+        });
+        
 });

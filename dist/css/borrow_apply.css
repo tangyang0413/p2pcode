@@ -17,3 +17,12 @@
   top: 240px;
   right: 100px;
 }
+#borrowModal .modal-body .glyphicon-ok {
+  color: green;
+  font-size: 50px ;
+}
+#borrowModal .modal-body .glyphicon-remove,
+#borrowModal .modal-body #time {
+  color: red;
+  font-size: 50px;
+}

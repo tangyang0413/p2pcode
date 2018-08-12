@@ -99,7 +99,7 @@
   #mainContent {
     position: relative;
     left: 0px;
-    min-height: 1000px ;
+    min-height: 1400px;
     transition: all 0.8s ease-in-out;
   }
   #mainContent #leftmenu {
@@ -126,6 +126,28 @@
 }
 body {
   overflow-x: hidden;
+}
+.el-tip-info {
+  padding: 20px;
+  background-color: #F4F8FA;
+  border-left: 2px solid #0099DD;
+  margin-bottom: 20px;
+}
+.el-tip-info h3 {
+  color: #09d;
+}
+#borrowForm {
+  width: 60%;
+  margin: 0px auto;
+}
+#borrowModal .modal-body .glyphicon-ok {
+  color: green;
+  font-size: 50px ;
+}
+#borrowModal .modal-body .glyphicon-remove,
+#borrowModal .modal-body #time {
+  color: red;
+  font-size: 50px;
 }
 .el-footer {
   background-color: #f8f8f8;
